@@ -17,5 +17,8 @@ async function handleTemperature(){
 
 }
 btn.addEventListener('click', handleTemperature);
-input.addEventListener('keydown', handleTemperature);
+input.addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                handleTemperature();
+            }
 
