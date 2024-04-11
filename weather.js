@@ -17,4 +17,5 @@ async function handleTemperature(){
 
 }
 btn.addEventListener('click', handleTemperature);
+input.addEventListener('onkeydown', handleTemperature);
 
